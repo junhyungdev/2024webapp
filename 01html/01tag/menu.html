@@ -58,14 +58,52 @@
         .visual {
             background-color: green;
             height: 400px;
+            /* 요소간 위아래 사이를 벌리는 경우 위 요소에서 margin bottom으로 벌린다. */
+            margin-bottom: 1em;
+        }
+
+        .section {
+            width: 1360px;
+            margin: 0 auto;
+            margin-bottom: 1em;
+        }
+
+        .section div {
+            height: 1000px;
+        }
+
+        .section .secLeft {
+            float: left;
+            width: 700px;
+            background-color: skyblue;
+        }
+
+        .section .secRight {
+            float: right;
+            width: 300px;
+            background-color: pink;
+        }
+
+        .ft {
+            background-color: green;
+            padding: 20px 0;
+        }
+
+        .ft div {
+            width: 1360px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: orange;
+            padding: 10px 0;
         }
     </style>
 </head>
 
 <body>
+    <!--menu 작성은 교재 45page 참고 -->
     <!-- menufloatleft -> clear.both -->
     <header class="hd">
-        <ul class="menu clear">
+        <ul class="menu clear"><!-- w1360 -->
             <li><a href="#">menu1</a></li>
             <li><a href="#">menu2</a></li>
             <li><a href="#">menu3</a></li>
@@ -73,7 +111,19 @@
             <li><a href="#">menu5</a></li>
         </ul>
     </header>
-    <div class="visual"></div>
+    <div class="visual"> slide </div>
+    <section class="section clear">
+        <div class="secLeft">left</div>
+        <div class="secRight">right</div>
+    </section>
+
+    <footer class="ft">
+        <div><!-- w1360 -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit odit vel illo exercitationem! Optio distinctio
+            possimus praesentium nobis eum, tempora suscipit, debitis illum minus natus officiis? Natus sapiente
+            eligendi non!
+        </div>
+    </footer>
 </body>
 
 </html>

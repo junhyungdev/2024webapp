@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* css reset */
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* 목록의 머리기호 등 스타일 제거 */
+        ul,
+        li {
+            list-style: none;
+        }
+
+        /* a 링크의 decoration을 제거(기본 파란색과 밑줄 등) */
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* css reset 끝 */
+        .hd {
+            background-color: blue;
+        }
+
+        /* 이 설정을 추가하지 않으면 hd 클래스가 blue 설정된 것이 보이지 않음 */
+        .clear::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .menu>li {
+            float: left;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hd">
+        <ul class="menu clear">
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </header>
+
+</body>
+
+</html>
