@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--반응형 시 필요-->
+    <title>Document</title>
+
+    <style>
+        body div {
+            background-color: pink;
+            margin: 10px;
+        }
+
+        body>div {
+            background-color: skyblue;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .test1 {
+            background-color: skyblue;
+        }
+
+        #test2 {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body><!--h1은 body의 자식요소. emmet단축키 body>h1 -->
+    <!-- alt + l + o 라이스서버 새창으로 켜기 -->
+    <h1>로고</h1> <!--h1과 h2는 형제 요소. h1+h2 -->
+    <h2>title</h2>
+    <h4>기본</h4> <!--기본 폰트 사이즈는 16px. 기본으로 작성한 text의 크기와 같다. 1em은 16px-->
+    기본
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam magni excepturi aspernatur veritatis, pariatur
+        nam placeat dolor culpa ipsum incidunt ab officiis, rerum quibusdam cumque dolores tenetur minima a. Sapiente.
+    </p>
+    <hr> <!--구분선 요소-->
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, reiciendis repudiandae. Esse reprehenderit
+    perspiciatis harum voluptatibus distinctio dolorem atque nobis, voluptatem molestiae. Animi id assumenda fugit
+    deserunt excepturi optio quibusdam.
+
+    <div> <!--div>div*3>lorem2-->
+        <div>Lorem, ipsum.</div>
+        <div>Fugiat, voluptates?</div>
+        <div>Sapiente, dolore.</div>
+    </div>
+
+    <ul> <!--비순차 목록. 메뉴 개발 시 사용 ul>li*10>{menu$}-->
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+        <li>menu7</li>
+        <li>menu8</li>
+        <li>menu9</li>
+        <li>menu10</li>
+    </ul>
+
+    <ol> <!--순차 목록. alt + 동시 수정할 곳 클릭-->
+        <li>menu1</li>
+        <li>menu2</li>
+        <li>menu3</li>
+        <li>menu4</li>
+        <li>menu5</li>
+        <li>menu6</li>
+        <li>menu7</li>
+        <li>menu8</li>
+        <li>menu9</li>
+        <li>menu10</li>
+        </ll>
+    </ol>
+
+    <ul>
+        <li>
+            <ul>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+                <li>sub1</li>
+            </ul>
+        </li>
+    </ul>
+
+    <a href="#">test</a><a href="#">test</a> <!-- #은 anchor -->
+    <img src="https://www.hll.kr/resources/images/company_img02.png" alt="">
+
+    <span>test</span>
+
+    <div style="width: 100px;"> <!--인라인 tag의 style 우선순위가 높다.-->
+        <div>test</div>
+        <p>Lorem <span style="color: red;">ipsum dolor sit amet consectetur</span> adipisicing elit. Ut officia maiores
+            adipisci quo aliquam,
+            quas repellat
+            fuga? Est quos facere quam eaque provident illum deleniti similique. Possimus amet quasi quo!</p>
+    </div>
+
+    <script></script> <!-- script가 위치해야하는 자리-->
+
+    <hr>
+    <h3>
+        CSS 우선순위
+    </h3>
+    <p>*(전체 선택자) < tag(1) < class(10) < id(100) < inline style < ! important</p>
+            <h1 class="test1"> 1 + 10 = 11 points</h1>
+            <h1 id="test2" style="background-color: blue;">blue color</h1>
+            javascript에서는 style을 적용하기 위해서 intline style을 바꾼다.
+</body>
+
+</html>

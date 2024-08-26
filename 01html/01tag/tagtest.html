@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css reset */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* a:link {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:visited {
+            color: black;
+        } */
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* ul.menu{}
+        .menu{}
+        ul{}
+        body>ul{} */
+        li {
+            list-style: none;
+        }
+
+        .menu li {
+            float: left;
+            /*블록단위 요소 li를 인라인 요소로 만든다. */
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* 바로 아래 자식에 적용. 우선순위 1+1+10 */
+        body>a.link1 {
+            color: blue;
+        }
+
+        /* 아래의 자손들에게 적용 */
+        body a.link1 {}
+
+        /* 우선순위 1+10 */
+        a.link1 {
+            color: red;
+        }
+
+        .boxWrap {
+            width: 90%;
+            background-color: blue;
+        }
+
+        .box {
+            background-color: skyblue;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>test</h1>
+    웹 화면을 클론하기 위해서는 point, point size, line-height, color 값들을 똑같이 찾자 <br>
+
+    <a href="http://www.google.com" class="link1">google</a>
+
+    <ul class="menu">
+        <li>test</li>
+        <li>test</li>
+    </ul>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td><a href="test" class="link1"></a>list</td>
+        </tr>
+    </table>
+
+    <div class="boxWrap">
+        <div class="box">
+            안녕하세요.
+        </div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat consequatur assumenda nobis. Provident, debitis
+        quia! Et corporis tempore inventore quasi placeat odit dolorem corrupti sunt amet dolores, repellat voluptates
+        fuga.</p>
+</body>
+
+</html>

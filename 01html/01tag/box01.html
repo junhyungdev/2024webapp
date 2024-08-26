@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        .box {
+            background-color: skyblue;
+            /* height: 50px; */
+            /* block요소를 inline-block요소로 만들어준다. */
+            /* inline은 margin과 padding값을 설정할 수 없다 */
+            display: inline-block;
+            margin: 10px;
+            padding: 30px;
+        }
+
+        .menuWrap {
+            background-color: blue;
+            /* float가 되면 높이값을 알 수 없어 높이를 넣어야 한다. */
+            height: 50px;
+        }
+
+        ul.menu {
+            width: 1360px;
+            /* margin은 위 아래, auto는 왼쪽 오른쪽 */
+            /* margin-left: auto; margin-right: auto;의 축약형 */
+            /* 블록단위이고 width값이 있으면 가운데로 온다 */
+            margin: 0 auto;
+        }
+
+        ul.menu:active {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        ul.menu>li {
+            float: left;
+            width: 25%;
+            /* height: 80px; */
+            background-color: pink;
+        }
+
+        ul.menu a {
+            background-color: skyblue;
+            display: inline-block;
+            width: 100%;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        ul.menu a:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 프리텐다드 폰트 사용하면 피그마와 거의 유사하게 작업할 수 있음 -->
+    <!-- <address style="font-style: normal;">test</address> -->
+
+    <div class="menuWrap"><!-- 100% -->
+        <!-- <div class="box">안녕하세요</div> -->
+        <ul class="menu"><!-- 1360px -->
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu1</a></li>
+        </ul>
+    </div>
+    <!-- <p>111</p> -->
+
+    <!-- <style>
+        .box1 {
+            background-color: blue;
+            width: 200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <div class="box1">test</div> -->
+
+    <style>
+        .box2 {
+            /* border size, style, color 의 축약형 */
+            border: 1px solid #000;
+            display: inline-block;
+        }
+
+        /* 자식 요소중에 마지막으로 등장 */
+        .box2::after {
+            content: "!!!";
+        }
+
+        .box2::before {
+            content: "홍길동님";
+        }
+    </style>
+    <div class="box2">
+
+        안녕하세요
+
+    </div>
+
+    <style>
+        .title {
+            width: 300px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .title::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 1px;
+            background-color: black;
+            margin: 10px auto;
+        }
+
+        .content_text {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+    <h2 class="title">title</h2>
+    <p class="content_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem, quidem quas autem esse
+        delectus sapiente
+        sequi enim obcaecati. Earum, cum aut? Quo id provident neque nam nulla, laudantium rerum.</p>
+</body>
+
+</html>
