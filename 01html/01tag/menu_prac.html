@@ -8,10 +8,10 @@
 
     <style>
         /* css reset */
-        /* * {
+        * {
             margin: 0;
             padding: 0;
-        } */
+        }
 
         /* 목록의 머리기호 등 스타일 제거 */
         ul,
@@ -38,9 +38,73 @@
             clear: both;
         }
 
+        .menu {
+            width: 1360px;
+            margin: 0 auto;
+            background-color: skyblue;
+        }
+
         .menu>li {
             float: left;
             width: 20%;
+        }
+
+        .menu a:hover {
+            background-color: green;
+        }
+
+        .menu>li>a {
+            line-height: 60px;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .visual {
+            background-color: green;
+            height: 400px;
+            margin-bottom: 1em;
+        }
+
+
+        .section div {
+            height: 1000px;
+        }
+
+        .section .secLeft {
+            background-color: skyblue;
+            width: 700px;
+            float: left;
+        }
+
+        .section .secRight {
+            background-color: pink;
+            width: 300px;
+            float: right;
+        }
+
+        .section {
+            width: 1360px;
+            margin: 0 auto;
+            margin-bottom: 1em;
+        }
+
+        .section::after {
+            content: "";
+            display: block;
+        }
+
+        .ft {
+            background-color: green;
+            padding: 20px 0;
+        }
+
+        .ft div {
+            width: 1360px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: orange;
+            padding: 10px 0;
         }
     </style>
 </head>
@@ -55,7 +119,16 @@
             <li><a href="#">menu5</a></li>
         </ul>
     </header>
-
+    <div class="visual">slide</div>
+    <section class="section clear">
+        <div class="secLeft">left</div>
+        <div class="secRight">right</div>
+    </section>
+    <footer class="ft">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, minima?
+        </div>
+    </footer>
 </body>
 
 </html>

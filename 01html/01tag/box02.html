@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 설정을 하지 않으면 기본값으로 들어간 padding값이 있다. */
+        * {
+            margin: 0;
+            padding: 0;
+            /* padding과 border값을 상자 안쪽으로 넣어 상자의 크기를 고정 */
+            box-sizing: border-box;
+        }
+
+        .box01 {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            /* 12시 부터 시계방향으로 padding적용됨 */
+            padding: 10px 10px 10px 10px;
+            /* 색상 1. 16진수 6개 ffffff은 흰색(RGB순서) */
+            /* 색상 2. rgba(255,0,0,0) */
+            border: 1px solid #000;
+        }
+
+        .box {
+            background-color: pink;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box01">
+        text
+    </div>
+
+    <div class="box"></div>
+    </div>
+
+</body>
+
+</html>

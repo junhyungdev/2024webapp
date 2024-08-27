@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: skyblue;
+            width: 100px;
+            height: 80px;
+            margin: 0 auto;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .box a {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* 부모가 높이 값이 있어야 height값이 적용된다. */
+            height: 100%;
+            /* transition은 모양이 바뀌기 전 값에 적용해야 한다. (a:hover가 아닌 a에 넣어야한다.) */
+            transition: 0.7s;
+        }
+
+        .box a:hover {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#">test</a>
+    </div>
+</body>
+
+</html>
